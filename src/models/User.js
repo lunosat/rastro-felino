@@ -19,11 +19,9 @@ const packageSchema = new Schema({
 const userSchema = new Schema({
     telegramId: {
         type: String,
-        unique: true
     },
     whatsappId: {
         type: String,
-        unique: true
     },
     packages: {
         type: [packageSchema]

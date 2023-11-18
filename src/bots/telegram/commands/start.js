@@ -11,7 +11,7 @@ _Para rastrear uma encomenda envie o código dela e se quiser um nome para facil
     const user = await User.findOne({ telegramId: ctx.from.id })
 
     if(!user){
-        User.create({
+        await User.create({
             telegramId: ctx.from.id
         })
     }
