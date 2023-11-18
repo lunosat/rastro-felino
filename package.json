@@ -1,0 +1,18 @@
+{
+  "name": "rastreia-pra-mim",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.1",
+    "node-cron": "^3.0.3",
+    "telegraf": "^4.15.0"
+  }
+}
