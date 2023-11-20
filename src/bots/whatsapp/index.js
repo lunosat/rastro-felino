@@ -123,7 +123,7 @@ const whatsappInit = async (init) => {
             lastDisconnect?.error?.output?.statusCode !==
             DisconnectReason.loggedOut
           ) {
-            startSock();
+            whatsappInit();
           } else {
             console.log("Connection closed. You are logged out.");
           }
