@@ -24,7 +24,8 @@ const userSchema = new Schema({
         type: String,
     },
     packages: {
-        type: [packageSchema]
+        type: [packageSchema],
+        default: []
     },
     banned: {
         type: Boolean,

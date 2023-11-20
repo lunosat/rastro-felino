@@ -128,3 +128,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Whatsapp
+
+qr.json 
+baileys_auth_info/
+baileys_auth_info/*
+./baileys_auth_info/
+./baileys_auth_info/*
+baileys_auth_info
+baileys_store_multi.json

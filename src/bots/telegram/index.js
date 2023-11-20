@@ -53,8 +53,6 @@ const telegramInit = async () => {
 
                 let middlewares = [];
 
-                //Middlewares
-
                 if (commandHandler && commandHandler.command) {
                     bot.command(commandHandler.command, ...middlewares, commandHandler);
 
@@ -78,7 +76,7 @@ const telegramInit = async () => {
     bot.on('text', eventText)
 
     bot.command('ok', (ctx) => {
-        ctx.replyWithV
+        ctx.message.text
     })
 
     

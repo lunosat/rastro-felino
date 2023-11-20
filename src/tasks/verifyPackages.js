@@ -2,6 +2,7 @@ import User from "../models/User.js";
 import cron from 'node-cron';
 import Tracker from "../linketrack/tracker.js";
 import { bot } from '../bots/telegram/index.js'
+import { sock } from "../bots/whatsapp/index.js";
 import formatMarkdownV2 from "../helpers/formatMarkdownV2.js";
 
 const tracker = new Tracker();
@@ -34,7 +35,7 @@ _Continuaremos monitorando seu pacote para você, apenas sente-se e relaxe._`
                     }
 
                     if (user.whatsappId) {
-
+                        await sock.sendMessage(user.whatsappId, { text })
                     }
 
                 }
