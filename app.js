@@ -14,5 +14,5 @@ import './src/tasks/verifyPackages.js'
     Log.process('Initializing bots...')
 
     await telegramInit()
-    await whatsappInit()
+    //await whatsappInit()
 })()
